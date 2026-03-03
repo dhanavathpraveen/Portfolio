@@ -1,0 +1,213 @@
+.nav-image {
+    text-decoration: none;
+    color: #F8FAFC;
+    font-size: medium;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+.nav-container {
+    color: #F8FAFC;
+    height: 40px;
+    align-items: center;
+    font-size: 23px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #F8FAFC;
+    padding-right: 80px;
+}
+
+.nav-links a:hover {
+    color: #22D3EE;
+    transition: 0.3s;
+}
+
+
+/* hero section  */
+
+.typewriter {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* ✅ FORCE TEXT COLOR */
+  color: #22D3EE;
+
+  width: 24ch;              /* match text length */
+  border-right: 3px solid white;
+
+  /* typing + cursor (cursor stops automatically) */
+  animation:
+    typing 4s steps(24,end) forwards,
+    blink 0.8s linear 5;
+}
+
+/* LETTER BY LETTER */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 24ch; }
+}
+
+/* CURSOR BLINK */
+@keyframes blink {
+  0%,100% { border-color: white; }
+  50% { border-color: transparent; }
+}
+
+/* REMOVE CURSOR AFTER FINISH */
+.typewriter {
+  animation-fill-mode: forwards;
+}
+
+/* 
+about section */
+
+.aboutme:hover {
+    color: #22D3EE;
+    transition: 0.3s;
+}
+.skills:hover {
+    color: #22D3EE;
+    transition: 0.3s;
+}
+/* 
+projects */
+
+.titleHeading:hover {
+    color: #22D3EE;
+    transition: 0.3s;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+.heading:hover {
+    color: #22D3EE;
+    transition: 0.3s;
+}
+
+
+
+
+
+/* 
+responsive design */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  background-color: #0F172A;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+
+  .nav-container {
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0F172A;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+    width: 180px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .nav-links Links:hover {
+    color: #22D3EE;
+}
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .mainhero {
+    margin-top: 70px;
+  }
+
+  .aboutmeP {
+    font-size: 18px;
+    margin: auto;
+  }
+   .aboutmeS {
+    font-size: 18px;
+    margin: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .image-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .titleHeading {
+    font-size: 18px;
+  }
+
+  .titleHeading + p,
+  .titleHeading + p + p {
+    font-size: 14px;
+  }
+
+
+  .right-section .image-container {
+    margin-top: 50px;       /* extra spacing if needed */
+  }
+
+  .left-section .image-container {
+    margin-bottom: 50px;       /* extra spacing if needed */
+  }
+
+  
+}
