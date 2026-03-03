@@ -209,5 +209,8 @@ responsive design */
     margin-bottom: 50px;       /* extra spacing if needed */
   }
 
+  .typewriter{
+    font-size: 20px;
+  }
   
 }
